@@ -1,10 +1,9 @@
 import { useParams } from "react-router-dom";
 
 const Edit = () => {
+  const params = useParams();
 
-    const params = useParams();
-
-    return <div>{params.id} : Edit</div>;
-}
+  return <div>{params.id} : Edit</div>;
+};
 
 export default Edit;
