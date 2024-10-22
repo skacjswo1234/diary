@@ -30,3 +30,16 @@ ESLint 쓸데없는 경고 지우기
 "react/prop-types": "off",
 
 폰트는 public 폴더에 이미지는 assets폴더에 넣기
+
+원격 main 넣을때  팁
+
+
+
+원격  origin/diary_company 파일 소스를 로컬로 임시 브랜치로 소스를 가져온다음
+(git checkout -b temp-branch origin/diary_company )
+
+git fetch origin main 기존 원격 메인브랜치 병합한다음
+(git fetch origin main)
+
+임시로 만들어놓은 temp-branch로 원격 main에 푸시한다.
+(git push origin temp-branch:main)
